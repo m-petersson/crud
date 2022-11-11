@@ -5,6 +5,8 @@ The database used is mongodb atlas. Create a cluster on mongodb atlas and connec
 
 ## Description
 
+This application uses Express, MongoDB, handlebars, and the Model view controller (MVC) design pattern. A user can register an account, and then log in, to view their own snippets, and create, update and delete snippets.
+
 On the homepage you can register a new account, log in, and see all snippets created by all users.
 ![crud1](https://user-images.githubusercontent.com/112863208/201315343-0d94fe65-6a94-4574-be47-919596c65fd0.png)
 
