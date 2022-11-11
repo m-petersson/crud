@@ -1,0 +1,205 @@
+body{
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    text-align: center;
+    background-color:rgb(254, 254, 254);
+}
+
+li{
+    display: inline;
+   font-size: large;
+}
+
+#snippets{
+    background-color:rgb(233, 233, 233);
+    list-style: none;
+    font-size: large;
+}
+  
+  /* Change the link color on hover */
+li a:hover {
+    color: white;
+    background-color: rgb(108, 108, 108);
+}
+
+li {
+    display: inline;
+}
+a:link {
+    text-decoration: none;
+}
+  
+a:visited {
+    text-decoration: none;
+}
+  
+a:hover {
+    text-decoration: none;
+}
+  
+a:active {
+    text-decoration: none;
+}
+
+#divHomePage{
+    font-size: large;
+    padding: 3%;
+}
+
+.submitButton{
+    background-color: rgb(233, 233, 233);
+    border: none;
+    padding:5%;
+    font-size: large;
+    width: 225px;
+}
+
+.submitButton:hover{
+    color: white;
+    background-color: rgb(108, 108, 108);
+}
+
+.submitButtonLogOut:hover{
+    color: white;
+    background-color: black;
+}
+
+.centerForm {
+    display:flex;
+    justify-content: center;
+}
+
+.leftForm{
+    display:flex;
+    justify-content:left;
+}
+
+/*for mobile phones*/
+input {
+    display: block;
+    padding: 5%;
+    margin-top: 9%;
+    margin-bottom: 9%;
+    width: 200px;
+    text-align: center;
+}
+.submitButtonLogOut{
+    background-color: rgb(108, 108, 108);
+    border: none;
+    padding:5%;
+    font-size: large;
+    width: 160px;
+    color: white;
+    border-radius: 12px;
+}
+li a {
+    color: black;
+    text-align: center;
+    padding: 20px 1px;
+    text-decoration: none;
+}
+ul{
+    background-color: rgb(233, 233, 233);
+    list-style: none;
+    font-size: large;
+    padding: 1.5%;
+    margin: 0px;
+    overflow: hidden;
+}
+#headerimg{
+   height: 100px;
+   margin:15px;
+}
+#headerimgside{
+    float:left;
+    height:120px;
+}
+
+/*for tablets*/
+@media screen and (min-width: 600px){
+    input {
+        display: block;
+        padding: 5%;
+        margin-top: 9%;
+        margin-bottom: 9%;
+        width: 200px;
+        text-align: center;
+    }
+    .submitButtonLogOut{
+        background-color: rgb(108, 108, 108);
+        border: none;
+        padding:5%;
+        font-size: large;
+        width: 225px;
+        color: white;
+        border-radius: 12px;
+    }
+    li a {
+        color: black;
+        text-align: center;
+        padding: 20px 16px;
+        text-decoration: none;
+    }
+    ul{
+        background-color: rgb(233, 233, 233);
+        list-style: none;
+        font-size: large;
+        padding: 1.5%;
+        margin: 0px;
+        overflow: hidden;
+    }
+    #headerimg{
+        height: 130px;
+        margin:15px;
+     }
+     #headerimgside{
+         float:left;
+         height:150px;
+     }
+
+}
+
+
+/*for desktops*/
+@media screen and (min-width: 768px){
+    input {
+        display: block;
+        padding: 5%;
+        margin-top: 9%;
+        margin-bottom: 9%;
+        width: 200px;
+        text-align: center;
+    }
+    .submitButtonLogOut{
+        background-color: rgb(108, 108, 108);
+        border: none;
+        padding:5%;
+        font-size: large;
+        width: 225px;
+        color: white;
+        border-radius: 12px;
+    }
+    li a {
+        color: black;
+        text-align: center;
+        padding: 20px 16px;
+        text-decoration: none;
+    }
+    ul{
+        background-color: rgb(233, 233, 233);
+        list-style: none;
+        font-size: large;
+        padding: 1.5%;
+        margin: 0px;
+        overflow: hidden;
+    }
+    #headerimg{
+        height: 130px;
+        margin:15px;
+     }
+     #headerimgside{
+         float:left;
+         height:150px;
+     }
+
+
+}

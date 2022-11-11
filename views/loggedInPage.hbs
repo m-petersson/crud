@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+   <head>
+    <link rel="stylesheet" href="/style.css">
+  </head>
+  <body>
+    {{#if flash}}
+      <div style="background-color:palegreen; margin:10px; padding:10px">
+      {{flash.message}}
+      </div>
+    {{/if}}
+    <div class="leftForm">
+      <form action="/loggedIn" method="POST">
+        <input class="submitButtonLogOut"type="submit" value="Log out" />
+      </form>
+    </div>
+    <ul>
+      <li><a href="/create">Create a snippet</a></li>
+      <li><a href="/update">Update a snippet</a></li>
+      <li><a href="/delete">Delete a snippet</a></li>
+    </ul>
+
+    <p>Your created snippets:</p>
+    
+    {{#each data as |d|}}
+        <li>{{d.snippet}}</li>
+        <br>
+    {{/each}}
+    <!--<p>{{data}}</p>-->
+
+  </body>
+</html>
+
+

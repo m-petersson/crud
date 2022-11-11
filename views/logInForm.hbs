@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+   <head>
+    <link rel="stylesheet" href="/style.css">
+  </head>
+   
+
+  <body>  {{#if flash}}
+      <div style="background-color:tomato; margin:10px; padding:10px">
+        {{flash.message}}
+      </div>
+    {{/if}}
+    <header>
+      <nav>
+        <ul>
+          <li><a href="/">Home</a></li>
+        </ul>
+      </nav>
+    </header>
+
+   
+    <div class="centerForm">
+      <form action="/logIn" method="POST">
+        <input type="text" name="nameL" placeholder="Enter your username" />
+        <input type="text" name="passwordL" placeholder="Enter your password" />
+        <input  class="submitButton"type="submit" value="Log in" />
+      </form>
+    </div>
+  </body>
+</html>

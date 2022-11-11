@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+   <head>
+    <link rel="stylesheet" href="/style.css">
+  </head>
+   
+  <body> 
+    <header>
+      <nav>
+        <ul>
+          <li><a href="/loggedIn">Back</a></li>
+        </ul>
+      </nav>
+    </header>
+    <p>Write your text here</p>
+    <textarea name="textarea" style="width:350px;height:200px;" form = "cForm" ></textarea>
+    <div class="centerForm">
+      <form action="/create" method="POST" id="cForm">
+        <input class="submitButton"type="submit" value="Create" />
+      </form>
+    </div>
+  </body>
+</html>

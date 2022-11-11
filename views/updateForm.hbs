@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+   <head>
+    <link rel="stylesheet" href="/style.css">
+  </head>
+    
+
+  <body>
+    <header>
+      <nav>
+        <ul>
+          <li><a href="/loggedIn">Back</a></li>
+        </ul>
+      </nav>
+    </header>
+    <p>To update/edit a snippet please first write the number of the snippet
+      you want to change. After sending the id you can write the new snippet in the big box you want 
+      below.
+      You can find the id of the snippets in the list below. (You can copy the 
+      id number and paste it in)
+    </p>
+    <div class="centerForm">
+      <form action="/update" method="POST" id="uForm">
+        <input type="text" name="id" id="uForm" placeholder="Enter the id number" />
+        <input class="submitButton"type="submit" id="uForm" value="Send" />
+    
+      </form>
+    </div>
+    <div class="centerForm">
+      <form action="/update2" method="POST" id="uForm2"></form>
+        <textarea name="textarea" style="width:350px;height:200px;" form = "uForm2" ></textarea>
+        <input class="submitButton"type="submit"style="margin:8%;"form = "uForm2" value="Update" />
+      </form> 
+    </div>
+    <p>Your created snippets:</p>
+    <p>{{data}}</p>
+
+  </body>
+</html>

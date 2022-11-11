@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="stylesheet" href="/style.css">
+  </head>
+  
+
+  <body>
+    <header>
+       {{#if flash}}
+    <div style="background-color:palegreen; margin:10px; padding:10px">
+      {{flash.message}}
+    </div>
+    {{/if}}
+   <img id="headerimg" src="/headerimg.png" alt="">
+   <img id="headerimgside" src="/headerimgside.png" alt="">
+        <ul>
+          <li><a href="/register">Register an account</a></li>
+          <li><a href="/logIn">Log in</a></li>
+        </ul>
+      </nav>
+    </header>
+  
+
+   
+
+    <div id="divHomePage">To be able to create, update and delete your own snippets you first have to 
+      register an account. </p> <p> After this you can log in to your own page and there
+      you can view, create, update and delete your own snippets.</div>
+    <p>All created snippets from all users:</p>
+
+  
+    <div id="snippets">
+      {{#each data as |d|}}
+        <li>{{d.snippet}}</li>
+        <br>
+      {{/each}}
+   </div>
+
+   <!-- <p>{{data}}</p>-->
+  </body>
+</html>
